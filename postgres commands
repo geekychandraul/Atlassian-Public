@@ -1,0 +1,19 @@
+#to create a database applens
+create database Applens;
+
+#to create a user named elements and password elements
+create user elements password 'elements';
+
+#to updatae the owner of the database applens
+alter database Applens owner to elements;
+
+# to create schema
+create schema sla_data;
+
+#to give accesss on the schema
+grant all on schema sla_data to elements;
+
+#grant all permission to all tables on the schema
+grant all on all tables in schema sla_data to elements;
+
+
